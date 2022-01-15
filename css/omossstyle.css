@@ -4,12 +4,46 @@
 }
 
 #wrapper_1 {
-    background-image: url(../img/cuttingboard.avif);
-    background-size: 100%;
+    background-image: url(../img/cuttingboard.png);
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* start of everything within wrapper 2*/
+#wrapper_2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 1 / 1;
+    grid-column: 1 / 5;
+}
+
+#wrapper_2 > article{
+    background-color: rgb(26, 22, 22, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40em;
+    width: 70em;
+    border: black solid
+}
+
+
+#wrapper_2 > article > h1{
+    margin: 1em;
+    font-size: 2em;
+}
+/* end of everything within wrapper 2*/
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0.5em;
+    font-size: 8em;
 }
 
 aside{
@@ -62,8 +96,7 @@ a{
     display: block;
     height: 100%;
     text-align: center; 
-    text-align: center;
-    justify-items: center;
+    line-height: 40px;
 }
 
 .aside_list_items:hover{
@@ -72,7 +105,7 @@ a{
 }
 
 .aside_list_items:nth-child(5)>::before{
-    content: 'hitta hit';
+    content: 'HITTA HIT';
 }
 
 .aside_list_items:nth-child(5)>:hover::before{

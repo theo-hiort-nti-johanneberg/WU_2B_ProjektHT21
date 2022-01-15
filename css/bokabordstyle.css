@@ -12,6 +12,36 @@
     grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
 }
 
+#wrapper_2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    grid-row: 1 / 1;
+    grid-column: 1 / 5;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper_2 > article {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: black solid;
+    height: 10em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper_2 > article > h1 {
+color: white;
+}
+
+#wrapper_2 > article > h2 {
+    color: white;
+    font-size: large;
+}
+
 aside{
     display: flex;
     flex-direction: column;

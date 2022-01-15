@@ -4,16 +4,59 @@
 }
 
 #wrapper_1 {
-    background-image: url(../img/cuttingboard.avif);
+    background-image: url(../img/cuttingboard.png);
     background-size: 100%;
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
 }
+
 /* start of everything within wrapper 2*/
 #wrapper_2 {
-    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr ;
+    grid-row: 1 / 1;
+    grid-column: 1 / 5;
+}
+
+#wrapper_2 > article {
+    margin: 1em;
+    border: black solid;
+    display: grid;
+    background:rgba(0, 0, 0, 0.4);
+    height: 12em;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+#wrapper_2 > article > img {
+    height: 12em;
+    grid-column: 1 / 2;
+}
+
+#wrapper_2 > article > div{
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#wrapper_2 > article > div > h1 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace
+}
+
+#wrapper_2 > article > div > h2 {
+    margin-left: 1em;
+    color: white;
+    font-size: large;
+    font-family: monospace;
+}
+
+#wrapper_2 > article > div > h3 {
+    color: white;
 }
 /* end of everything within wrapper 2*/
 
@@ -66,9 +109,8 @@ a{
     color: rgba(240, 230, 230, 0.9);
     display: block;
     height: 100%;
-    text-align: center; 
     text-align: center;
-    justify-items: center;
+    line-height: 40px;
 }
 
 .aside_list_items:hover{
@@ -77,7 +119,7 @@ a{
 }
 
 .aside_list_items:nth-child(5)>::before{
-    content: 'hitta hit';
+    content: 'HITTA HIT';
 }
 
 .aside_list_items:nth-child(5)>:hover::before{

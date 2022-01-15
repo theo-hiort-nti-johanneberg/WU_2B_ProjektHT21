@@ -1,15 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-
-}
-
-html{
-    scrollbar-width: none;
 }
 
 #wrapper_1 {
-    background-image: url(../img/cuttingboard.avif);
+    background-image: url(../img/cuttingboard.png);
     background-size: 100%;
     width: 100vw;
     height: 100vh;
@@ -24,6 +19,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    margin-bottom: 15em;
 }
 
 header>div{
@@ -91,8 +87,7 @@ a{
     display: block;
     height: 100%;
     text-align: center; 
-    text-align: center;
-    justify-items: center;
+    line-height: 40px;
 }
 
 .aside_list_items:hover{
@@ -101,7 +96,7 @@ a{
 }
 
 .aside_list_items:nth-child(5)>::before{
-    content: 'hitta hit';
+    content: 'HITTA HIT';
 }
 
 .aside_list_items:nth-child(5)>:hover::before{
